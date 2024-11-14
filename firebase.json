@@ -1,0 +1,25 @@
+{
+  "firestore": {
+    "rules": "firebase.rules",
+    "indexes": "firebase.indexes.json"
+  },
+  "storage": {
+    "rules": "firebase.rules",
+    "cors": [{
+      "origin": ["*"],
+      "method": ["GET", "POST", "PUT", "DELETE", "HEAD", "OPTIONS"],
+      "maxAgeSeconds": 3600,
+      "responseHeader": [
+        "Content-Type",
+        "Content-Length",
+        "Content-Disposition",
+        "Content-Encoding",
+        "Content-Range",
+        "Content-Location",
+        "Cache-Control",
+        "Expires",
+        "Access-Control-Allow-Origin"
+      ]
+    }]
+  }
+}
